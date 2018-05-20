@@ -1,0 +1,97 @@
+CheatSheet XML
+https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view
+
+Font Family ROBOTO
+https://stackoverflow.com/questions/12128331/how-to-change-fontfamily-of-textview-in-android
+
+SnackBar:
+https://www.androidhive.info/2015/09/android-material-design-snackbar-example/
+
+FAB
+http://www.androidhive.info/2015/12/android-material-design-floating-action-button/
+
+TABS
+https://www.androidhive.info/2015/09/android-material-design-working-with-tabs/
+
+Butter Knife: (easy code wrtiiing)
+https://www.androidhive.info/2017/10/android-working-with-butterknife-viewbinding-library/
+
+Bottom Dialog
+https://www.androidhive.info/2017/12/android-working-with-bottom-navigation/
+
+Settings Page
+https://www.androidhive.info/2017/07/android-implementing-preferences-settings-screen/
+
+Push Notification
+https://www.androidhive.info/2015/06/android-push-notifications-using-parse-com/
+
+Multi Language App:
+https://www.androidhive.info/2014/07/android-building-multi-language-supported-app/
+
+Check Internet Connection:
+https://www.androidhive.info/2012/07/android-detect-internet-connection-status/
+
+Downloading file with progress bar
+https://www.androidhive.info/2012/04/android-downloading-file-by-showing-progress-bar/
+
+External FOnts:
+https://www.androidhive.info/2012/02/android-using-external-fonts/
+
+====================
+RESOURCE DEVELOPMENT
+====================
+
+Glide for image
+https://www.androidhive.info/2016/04/android-glide-image-library-building-image-gallery-app/
+
+Volley
+https://www.androidhive.info/2014/05/android-working-with-volley-library-1/
+
+Audio Player
+https://www.androidhive.info/2012/03/android-building-audio-player-tutorial/
+
+=============
+RECYCLER VIEW
+==============
+
+RecyclerView
+http://www.androidhive.info/2016/01/android-working-with-recycler-view/
+
+Recyclerview search
+https://www.androidhive.info/2017/11/android-recyclerview-with-search-filter-functionality/
+
+shimmer effect with recycler view
+https://www.androidhive.info/2018/01/android-content-placeholder-animation-like-facebook-using-shimmer/
+
+Gmail like view
+https://www.androidhive.info/2017/02/android-creating-gmail-like-inbox-using-recyclerview/
+
+Profile Screen:
+https://www.androidhive.info/android-databinding-in-recyclerview-profile-screen/
+
+CardView and Recycler View
+https://www.androidhive.info/2016/05/android-working-with-card-view-and-recycler-view/
+
+===========
+PERMISSIONS
+===========
+
+EASY Permission using Dexter
+https://www.androidhive.info/2017/12/android-easy-runtime-permissions-with-dexter/
+
+MARSHMALLOW permissions
+https://www.androidhive.info/2016/11/android-working-marshmallow-m-runtime-permissions/
+
+========
+LOCAL DB
+========
+
+Realm
+https://www.androidhive.info/2016/05/android-working-with-realm-database-replacing-sqlite-core-data/
+
+============
+INTRO SCREEN
+============
+
+Slider
+https://www.androidhive.info/2016/05/android-build-intro-slider-app/

@@ -8,6 +8,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
+import sathish.ngosampleapp.util.ConnectivityReceiver;
 import sathish.ngosampleapp.util.LruBitmapCache;
 
 public class AppController extends Application {
@@ -28,6 +29,10 @@ public class AppController extends Application {
 
     public static synchronized AppController getInstance() {
         return mInstance;
+    }
+
+    public void setConnectivityListener(ConnectivityReceiver.ConnectivityReceiverListener listener) {
+        ConnectivityReceiver.connectivityReceiverListener = listener;
     }
 
     public RequestQueue getRequestQueue() {
