@@ -5,11 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import sathish.ngosampleapp.activity.AudioActivity;
-import sathish.ngosampleapp.activity.BookAcitivty;
-import sathish.ngosampleapp.activity.LoginActivity;
-import sathish.ngosampleapp.activity.SignUpActivity;
-import sathish.ngosampleapp.activity.VideoActivity;
+import sathish.ngosampleapp.activity.LoginSignUpActivity;
+import sathish.ngosampleapp.activity.testing.AudioActivity;
+import sathish.ngosampleapp.activity.testing.BookAcitivty;
+import sathish.ngosampleapp.activity.testing.LoginActivity;
+import sathish.ngosampleapp.activity.testing.SignUpActivity;
+import sathish.ngosampleapp.activity.testing.VideoActivity;
 import sathish.ngosampleapp.util.Util;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        Util.start(this, LoginSignUpActivity.class);
+        finish();
     }
 
     @OnClick(R.id.main_video)

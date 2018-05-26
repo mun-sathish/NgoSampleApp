@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/olive_green</color>
+    <color name="colorPrimaryDark">@color/orange</color>
+    <color name="colorAccent">@color/toast_success</color>
 
+    <!--LoginFragment-->
+    <color name="login_label_color">@color/olive_green</color>
+    <color name="login_label_background">@color/transparent</color>
+    <color name="login_text_color">@color/md_white_1000</color>
+    <color name="login_button_color">#ffb74d</color>
+    <color name="login_button_shadow_color">#8d6e63</color>
+    <color name="login_link_color">#651fff</color>
+
+    <!--Toast Colors-->
+    <color name="toast_primary">#1e88e5</color>
+    <color name="toast_secondary">#4dd0e1</color>
+    <color name="toast_danger">#ef0000</color>
+    <color name="toast_info">#ffa000</color>
+    <color name="toast_success">#66bb6a</color>
+
+    <color name="olive_green">#33691e</color>
+    <color name="orange">#ffa000</color>
+    <color name="transparent">#00000000</color>
 
     <!--reds-->
     <color name="md_red_50">#FFEBEE</color>

@@ -17,7 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import sathish.ngosampleapp.R;
-import sathish.ngosampleapp.activity.VideoPlayerActivity;
+import sathish.ngosampleapp.activity.testing.VideoPlayerActivity;
 import sathish.ngosampleapp.dto.VideoModel;
 import sathish.ngosampleapp.util.Const;
 import sathish.ngosampleapp.util.Util;

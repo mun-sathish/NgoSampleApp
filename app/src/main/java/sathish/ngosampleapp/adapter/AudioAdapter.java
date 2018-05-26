@@ -17,7 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import sathish.ngosampleapp.R;
-import sathish.ngosampleapp.activity.AudioPlayerActivity;
+import sathish.ngosampleapp.activity.testing.AudioPlayerActivity;
 import sathish.ngosampleapp.dto.AudioModel;
 import sathish.ngosampleapp.util.Const;
 import sathish.ngosampleapp.util.Util;

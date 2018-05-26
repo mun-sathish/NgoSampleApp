@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.BookAcitivty">
+    tools:context=".activity.testing.BookAcitivty">
 
     <include layout="@layout/shimmer_layout" />
 

@@ -8,10 +8,51 @@
     <string name="sign_in_action_sign_in">Sign in</string>
     <string name="sign_in_error_incorrect_credentials">Invalid Credentials</string>
     <string name="sign_in_error_field_required">This field is required</string>
+
+    <string name="Rs">\u20B9</string>
+
+
     <string name="title_activity_book">BookActivity</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_video">VideoActivity</string>
 
-    <string name="Rs">\u20B9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login_hint_password">Password</string>
+    <string name="login_hint_username">Username</string>
+    <string name="login_btn">Login</string>
+    <string name="login_register"><u>Register</u></string>
+    <string name="login_link_sepertor">|</string>
+    <string name="login_link_forgot_password"><u>Forgot Password</u></string>
+
+
+    <string name="signup_mobile">Mobile No</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_next">NEXT</string>
+    <string name="signup_hint_username">Username</string>
+    <string name="signup_hint_password">Password</string>
+    <string name="signup_hint_name">Full Name</string>
+    <string name="signup_field_required">@string/required</string>
+    <string name="signup_username_not_available">Already Taken</string>
+    <string name="signup_username_available">Username Available</string>
+
+    <string name="sq_hint_answer">Provide Answer</string>
+    <string name="sq_btn_text">Create Account</string>
+    <string name="sq_field_required">@string/required</string>
+
+    <string name="fp_password1">New Password</string>
+    <string name="fp_hint_password2">Repeat Password</string>
+    <string name="fp_btn_text_check">Check</string>
+    <string name="fp_btn_text_confirm">Confirm</string>
+    <string name="fp_btn_text_change_password">Change Password</string>
+
+
+    <!-- Common Fields -->
+    <string name="required">This Field is Required</string>
+    <string name="fp_invalid_answer">Invalid Answer</string>
+    <string name="fp_password_mismatch">Password Mismatch</string>
+    <string name="fp_sq_not_loaded">Security Question Not loaded yet</string>
+
 
 </resources>

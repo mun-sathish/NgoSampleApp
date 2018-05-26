@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SignUpFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_background" />
+
+    <ImageView
+        android:id="@+id/signup_header_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/signup_name_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/signup_name_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_username_layout"
+        android:layout_centerInParent="true"
+        app:mtf_backgroundColor="@color/orange"
+        app:mtf_image="@drawable/name"
+        app:mtf_labelColor="@color/login_label_color"
+        app:mtf_hasFocus="true"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_hint_name"
+            android:inputType="text"
+            android:textColor="@color/login_text_color"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/signup_username_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_password_layout"
+        android:layout_centerInParent="true"
+        app:mtf_backgroundColor="@color/orange"
+        app:mtf_image="@drawable/username"
+        app:mtf_labelColor="@color/login_label_color"
+        app:mtf_hasFocus="true"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/signup_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_hint_username"
+            android:inputType="text"
+            android:textColor="@color/login_text_color"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/signup_password_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:mtf_backgroundColor="@color/orange"
+        app:mtf_image="@drawable/password"
+        app:mtf_labelColor="@color/login_label_color"
+        app:mtf_hasFocus="true"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_hint_password"
+            android:inputType="textPassword"
+            android:textColor="@color/login_text_color"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/signup_phone_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_password_layout"
+        android:layout_centerInParent="true"
+        app:mtf_backgroundColor="@color/orange"
+        app:mtf_image="@drawable/phone"
+        app:mtf_labelColor="@color/login_label_color"
+        app:mtf_hasFocus="true"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/signup_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_mobile"
+            android:inputType="phone"
+            android:textColor="@color/login_text_color"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/signup_email_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_phone_layout"
+        android:layout_centerInParent="true"
+        app:mtf_backgroundColor="@color/orange"
+        app:mtf_image="@drawable/email"
+        app:mtf_labelColor="@color/login_label_color"
+        app:mtf_hasFocus="true"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/login_text_color"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/signup_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_email_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        fancy:mfb_borderColor="#FFFFFF"
+        fancy:mfb_borderWidth="1dp"
+        fancy:mfb_defaultColor="#7ab800"
+        fancy:mfb_focusColor="#9bd823"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_text="@string/signup_next"
+        fancy:mfb_textColor="#FFFFFF"
+        fancy:mfb_textSize="20sp" />
+
+</RelativeLayout>

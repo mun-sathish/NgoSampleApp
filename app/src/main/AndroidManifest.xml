@@ -21,8 +21,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:name=".activity.testing.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
 
         <receiver
             android:name=".util.ConnectivityReceiver"
@@ -33,15 +34,17 @@
         </receiver>
 
         <activity
-            android:name=".activity.VideoActivity"
+            android:name=".activity.testing.VideoActivity"
             android:label="@string/title_activity_video"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.AudioActivity" />
-        <activity android:name=".activity.BookAcitivty" />
-        <activity android:name=".activity.SignUpActivity" />
-        <activity android:name=".activity.ProfileActivity" />
-        <activity android:name=".activity.VideoPlayerActivity" />
-        <activity android:name=".activity.AudioPlayerActivity"></activity>
+        <activity android:name=".activity.testing.AudioActivity" />
+        <activity android:name=".activity.testing.BookAcitivty" />
+        <activity android:name=".activity.testing.SignUpActivity" />
+        <activity android:name=".activity.testing.ProfileActivity" />
+        <activity android:name=".activity.testing.VideoPlayerActivity" />
+        <activity android:name=".activity.testing.AudioPlayerActivity" />
+        <activity android:name=".activity.LoginSignUpActivity" />
+        <activity android:name=".activity.FeedActivity"></activity>
     </application>
 
 </manifest>

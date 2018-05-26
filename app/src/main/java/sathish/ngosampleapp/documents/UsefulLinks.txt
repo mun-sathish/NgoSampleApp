@@ -1,3 +1,21 @@
+ALL MATERIAL UI DEVELOPMENT LINK:
+https://github.com/wasabeef/awesome-android-ui
+https://github.com/wasabeef/awesome-android-libraries
+https://github.com/JStumpp/awesome-android
+https://infinum.co/the-capsized-eight/top-5-android-libraries-every-android-developer-should-know-about
+
+About Developer Page:
+https://github.com/jrvansuita/MaterialAbout
+
+CoordinatorTabLayout:
+https://github.com/hugeterry/CoordinatorTabLayout
+
+Toast:
+https://github.com/Muddz/StyleableToast
+
+Rating Bar
+https://github.com/ome450901/SimpleRatingBar
+
 CheatSheet XML
 https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view
 
@@ -34,6 +52,9 @@ https://www.androidhive.info/2012/07/android-detect-internet-connection-status/
 Downloading file with progress bar
 https://www.androidhive.info/2012/04/android-downloading-file-by-showing-progress-bar/
 
+Expansion Panel
+https://github.com/florent37/ExpansionPanel
+
 External FOnts:
 https://www.androidhive.info/2012/02/android-using-external-fonts/
 
@@ -49,6 +70,9 @@ https://www.androidhive.info/2014/05/android-working-with-volley-library-1/
 
 Audio Player
 https://www.androidhive.info/2012/03/android-building-audio-player-tutorial/
+
+For Video Player (Exo Player)
+https://github.com/rubensousa/PreviewSeekBar
 
 =============
 RECYCLER VIEW
@@ -95,3 +119,16 @@ INTRO SCREEN
 
 Slider
 https://www.androidhive.info/2016/05/android-build-intro-slider-app/
+
+
+==========
+UTILITY
+=======
+Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. Less code, better quality
+
+ObjectBox (GitHub) is a new superfast object-oriented database for mobile.
+
+Essentials (GitHub) is a set of utility classes and hash functions for Android & Java projects.
+
+greenDAO (GitHub) is an ORM optimized for Android: it maps database tables to Java objects and uses code generation for optimal speed.
+

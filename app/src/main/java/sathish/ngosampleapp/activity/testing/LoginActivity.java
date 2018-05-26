@@ -1,4 +1,4 @@
-package sathish.ngosampleapp.activity;
+package sathish.ngosampleapp.activity.testing;
 
 import android.content.Context;
 import android.os.AsyncTask;

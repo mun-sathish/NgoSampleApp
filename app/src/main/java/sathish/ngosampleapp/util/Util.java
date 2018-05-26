@@ -7,6 +7,10 @@ import android.os.Bundle;
 
 public class Util {
 
+    public static boolean isNull(String s) {
+        return (s == null || s.trim().length() == 0);
+    }
+
     public static void start(Context context, java.lang.Class cls) {
         context.startActivity(new Intent(context, cls));
     }

@@ -1,4 +1,4 @@
-package sathish.ngosampleapp.activity;
+package sathish.ngosampleapp.activity.testing;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
