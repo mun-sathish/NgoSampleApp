@@ -10,8 +10,8 @@
         android:elevation="20dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <RelativeLayout
@@ -22,9 +22,9 @@
 
                 <ImageView
                     android:id="@+id/book_banner"
-                    android:layout_width="75dp"
-                    android:layout_height="200dp"
-                    android:scaleType="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
                     android:src="@mipmap/ic_launcher" />
             </RelativeLayout>
 
@@ -50,47 +50,55 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-black"
-                            android:text="Name"
+                            android:text="Name asdf asd fas dfasd fas fdasd "
                             android:textAppearance="?android:textAppearanceLarge" />
 
-                        <TextView
-                            android:id="@+id/book_edition"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_toRightOf="@+id/book_name"
-                            android:fontFamily="sans-serif-light"
-                            android:text="(1)"
-                            android:textAppearance="?android:textAppearanceMedium"
-                            android:textStyle="italic" />
 
-                        <TextView
-                            android:id="@+id/book_edition_no"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="3dp"
-                            android:layout_toRightOf="@+id/book_edition"
-                            android:fontFamily="sans-serif-light"
-                            android:text="(1.01.1)"
-                            android:textAppearance="?android:textAppearanceMedium"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:id="@+id/book_author"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:id="@+id/book_author_layout"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/book_name"
-                            android:layout_marginLeft="20dp"
-                            android:fontFamily="sans-serif"
-                            android:text="- Sathish"
-                            android:textAppearance="?android:textAppearanceMedium"
-                            android:textStyle="italic" />
+                            android:orientation="horizontal"
+                            android:paddingEnd="10dp">
+
+                            <TextView
+                                android:id="@+id/book_author"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif"
+                                android:text="- asdf dsaf asdf asd fsa dfsad fasd f"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/book_edition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="(1)"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/book_edition_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="(1.01.1)"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+
 
                         <View
                             android:id="@+id/book_view2"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
-                            android:layout_below="@+id/book_author" />
+                            android:layout_below="@+id/book_author_layout" />
 
                         <TextView
                             android:id="@+id/book_isbn_textview"

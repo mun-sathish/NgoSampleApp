@@ -20,18 +20,9 @@ public class VideoModel {
     @SerializedName("genre")
     @Expose
     private String genre;
-    @SerializedName("price")
-    @Expose
-    private String price;
-    @SerializedName("discount")
-    @Expose
-    private String discount;
     @SerializedName("is_premium")
     @Expose
     private String isPremium;
-    @SerializedName("is_free")
-    @Expose
-    private String isFree;
     @SerializedName("banner")
     @Expose
     private String banner;
@@ -79,36 +70,12 @@ public class VideoModel {
         this.genre = genre;
     }
 
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(String discount) {
-        this.discount = discount;
-    }
-
     public String getIsPremium() {
         return isPremium;
     }
 
     public void setIsPremium(String isPremium) {
         this.isPremium = isPremium;
-    }
-
-    public String getIsFree() {
-        return isFree;
-    }
-
-    public void setIsFree(String isFree) {
-        this.isFree = isFree;
     }
 
     public String getBanner() {
@@ -126,5 +93,4 @@ public class VideoModel {
     public void setFile(String file) {
         this.file = file;
     }
-
 }

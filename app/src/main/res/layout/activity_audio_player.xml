@@ -1,8 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.testing.AudioPlayerActivity">
+    android:orientation="vertical"
+    android:weightSum="6">
 
-</android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/md_black_1000"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/audio_player_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/free" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#6d000000"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/audio_player_title_author_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Title/Author: "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/audio_player_title_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/audio_player_title_author_textview"
+                android:fontFamily="sans-serif-light"
+                android:text="Armageddon by Sathish Dustakar"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/md_white_1000" />
+
+            <TextView
+                android:id="@+id/audio_player_rating_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/audio_player_title_author"
+                android:fontFamily="sans-serif-light"
+                android:text="User Rating: "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/audio_player_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/audio_player_title_author"
+                android:layout_toEndOf="@+id/audio_player_rating_textview"
+                android:fontFamily="sans-serif-light"
+                android:text="2.5 / 5"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/md_white_1000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/md_grey_700"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/audio_player_feedback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@color/md_grey_700"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/audio_player_feedback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/md_white_1000"
+            android:hint="Write a Comment..."
+            android:padding="5dp"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:id="@+id/audio_player_rating_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/md_white_1000"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <RatingBar
+                android:id="@+id/audio_player_rating_input"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:numStars="5"
+                android:progressTint="@color/colorAccent"
+                android:secondaryProgressTint="@color/colorPrimary"
+                android:stepSize="1.0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/audio_player_feedback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/md_blue_700"
+            android:text="NEXT"
+            android:textColor="@color/md_white_1000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audio_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@color/md_black_1000"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/audio_player_backward_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/img_fast_backward" />
+
+        <ImageView
+            android:id="@+id/audio_player_play_pause_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/img_play" />
+
+        <ImageView
+            android:id="@+id/audio_player_forward_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/img_fast_forward" />
+    </LinearLayout>
+
+</LinearLayout>

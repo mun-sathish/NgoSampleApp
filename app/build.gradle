@@ -30,6 +30,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    // Exo player
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.7.3'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.7.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.7.3'
+
     // handling json request and response
     implementation 'com.android.volley:volley:1.1.0'
 
@@ -53,5 +58,8 @@ dependencies {
     implementation 'com.github.florent37:materialtextfield:1.0.7'
     // flat buttons
     implementation 'com.rilixtech:materialfancybuttons:1.8.7'
+
+    // coordinator tab
+    implementation 'cn.hugeterry.coordinatortablayout:coordinatortablayout:1.2.2'
 
 }

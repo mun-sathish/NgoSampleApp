@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,9 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import sathish.ngosampleapp.R;
-import sathish.ngosampleapp.activity.LoginSignUpActivity;
 import sathish.ngosampleapp.util.Const;
-import sathish.ngosampleapp.util.Util;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -84,6 +81,7 @@ public class LoginFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
+
         return view;
     }
 

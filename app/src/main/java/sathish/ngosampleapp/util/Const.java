@@ -21,10 +21,13 @@ public class Const {
     public static final ConstModel AUDIO_URI = new ConstModel(BASE_URI + "/resource/audio", Request.Method.GET);
     public static final ConstModel VIDEO_URI = new ConstModel(BASE_URI + "/resource/video", Request.Method.GET);
     public static final ConstModel BOOK_URI = new ConstModel(BASE_URI + "/resource/book", Request.Method.GET);
-    // Resource Access URI
-    public static final ConstModel AUDIO_ACCESS_URI = new ConstModel(BASE_URI + "/resource/audio/access", Request.Method.GET);
-    public static final ConstModel VIDEO_ACCESS_URI = new ConstModel(BASE_URI + "/resource/video/access", Request.Method.GET);
-    public static final ConstModel BOOK_ACCESS_URI = new ConstModel(BASE_URI + "/resource/book/access", Request.Method.GET);
+    // Resource Feedback URI
+    public static final ConstModel AUDIO_FEEDBACK_URI = new ConstModel(BASE_URI + "/resource/audio/", Request.Method.GET);
+    public static final ConstModel AUDIO_FEEDBACK_ADD_URI = new ConstModel(BASE_URI + "/resource/audio/feedback/add", Request.Method.POST);
+    public static final ConstModel VIDEO_FEEDBACK_URI = new ConstModel(BASE_URI + "/resource/video/", Request.Method.GET);
+    public static final ConstModel VIDEO_FEEDBACK_ADD_URI = new ConstModel(BASE_URI + "/resource/video/feedback/add", Request.Method.POST);
+    public static final ConstModel BOOK_FEEDBACK_URI = new ConstModel(BASE_URI + "/resource/book/", Request.Method.GET);
+    public static final String FEEDBACK_PARAM = "/feedback";
     // Resource Path
     private static final String BLOB_PATH = "http://awakenyourselfwithinyou.org/ngo/uploads/blob";
     public static final String VIDEO_BANNER_PATH = BLOB_PATH + "/video/banner/";

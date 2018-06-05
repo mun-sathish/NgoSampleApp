@@ -8,6 +8,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
+import java.util.List;
+
+import sathish.ngosampleapp.dto.AudioModel;
 import sathish.ngosampleapp.util.ConnectivityReceiver;
 import sathish.ngosampleapp.util.LruBitmapCache;
 
@@ -18,6 +21,7 @@ public class AppController extends Application {
 
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;
+    public List<AudioModel> audioList;
 
     private static AppController mInstance;
 

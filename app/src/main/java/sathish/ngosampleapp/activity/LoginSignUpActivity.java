@@ -5,11 +5,8 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -34,7 +31,6 @@ import java.util.Map;
 
 import butterknife.ButterKnife;
 import sathish.ngosampleapp.AppController;
-import sathish.ngosampleapp.MainActivity;
 import sathish.ngosampleapp.R;
 import sathish.ngosampleapp.dto.ResponseModel;
 import sathish.ngosampleapp.dto.SharedPref;
@@ -279,7 +275,7 @@ public class LoginSignUpActivity extends AppCompatActivity implements LoginFragm
                 case "success":
                     new SharedPref(context, Const.LoginPref).addString(Const.keyUser, successRes);
                     PDialog.showStyleableToast(context, "Logged In Successfully");
-                    Util.start(context, MainActivity.class);
+                    Util.start(context, FeedActivity.class);
                     finish();
                     break;
                 case "failure":
@@ -394,7 +390,7 @@ public class LoginSignUpActivity extends AppCompatActivity implements LoginFragm
             switch (success) {
                 case "success":
                     PDialog.showStyleableToast(context, "Created Successfully");
-                    Util.start(context, MainActivity.class);
+                    Util.start(context, FeedActivity.class);
                     finish();
                     break;
                 case "failure":
@@ -539,7 +535,7 @@ public class LoginSignUpActivity extends AppCompatActivity implements LoginFragm
                         ResponseModel responseModel = gson.fromJson(response.toString(),
                                 ResponseModel.class);
                         if (responseModel.getStatusCode() == 0) {
-                            navigatedFragmentList.remove(navigatedFragmentList.size()-1);
+                            navigatedFragmentList.remove(navigatedFragmentList.size() - 1);
                             addFragment(loginFragment, true);
                             onPostExecute("success");
                         } else {
@@ -643,7 +639,7 @@ public class LoginSignUpActivity extends AppCompatActivity implements LoginFragm
                                 ResponseModel.class);
                         if (responseModel.getStatusCode() == 0) {
                             onPostExecute("success");
-                            if(mTaskType.equals("fp"))
+                            if (mTaskType.equals("fp"))
                                 forgotPasswordFragment.handleUsernameResponse(null, false);
                         } else {
                             if (mTaskType.equals("fp")) {

@@ -1,7 +1,6 @@
 package sathish.ngosampleapp.adapter;
 
 import android.content.Context;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -43,27 +42,15 @@ public class AudioAdapter extends RecyclerView.Adapter<AudioAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final AudioModel audioModel = audioList.get(position);
-        holder.title.setText(audioModel.getTitle());
+        holder.title.setText(audioModel.getTitle() + " (" + audioModel.getGenre() + ")");
         holder.author.setText(audioModel.getAuthor());
-        holder.genre.setText("(" + audioModel.getGenre() + ")");
+//        holder.genre.setText("(" + audioModel.getGenre() + ")");
         if (audioModel.getIsPremium().equals("1")) {
-            holder.isPremium.setImageResource(R.drawable.premium);
-        } else if (audioModel.getIsFree().equals("1")) {
-            holder.isPremium.setImageResource(R.drawable.free);
-            holder.price.setPaintFlags(holder.price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-            holder.discount.setPaintFlags(holder.discount.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+            holder.isPremium.setImageResource(R.mipmap.premium);
+        } else {
+//            holder.isPremium.setImageResource(R.mipmap.free);
         }
 
-        int discount = Integer.valueOf(audioModel.getDiscount());
-        int price = Integer.valueOf(audioModel.getPrice());
-        if (discount <= 0) {
-            holder.price.setText(audioModel.getPrice());
-            holder.discount.setText("");
-        } else {
-            price -= price * discount / 100;
-            holder.price.setText("" + price);
-            holder.discount.setText("(" + audioModel.getDiscount() + "% discount)");
-        }
         Glide.with(mContext).load(Const.AUDIO_BANNER_PATH + audioModel.getBanner())
                 .thumbnail(0.5f)
                 .into(holder.banner);
@@ -71,10 +58,11 @@ public class AudioAdapter extends RecyclerView.Adapter<AudioAdapter.MyViewHolder
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                bundle.putString("file", audioModel.getFile());
+                bundle.putSerializable("model", audioModel);
                 Util.startWithBundle(mContext, AudioPlayerActivity.class, bundle);
             }
         });
+
     }
 
     @Override
@@ -90,10 +78,6 @@ public class AudioAdapter extends RecyclerView.Adapter<AudioAdapter.MyViewHolder
         TextView author;
         @BindView(R.id.audio_genre)
         TextView genre;
-        @BindView(R.id.audio_price)
-        TextView price;
-        @BindView(R.id.audio_discount)
-        TextView discount;
         @BindView(R.id.audio_premium)
         ImageView isPremium;
         @BindView(R.id.audio_banner)

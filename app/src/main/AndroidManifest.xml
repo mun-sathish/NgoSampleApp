@@ -37,7 +37,7 @@
             android:name=".activity.testing.VideoActivity"
             android:label="@string/title_activity_video"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.testing.AudioActivity" />
+        <activity android:name=".activity.AudioActivity" />
         <activity android:name=".activity.testing.BookAcitivty" />
         <activity android:name=".activity.testing.SignUpActivity" />
         <activity android:name=".activity.testing.ProfileActivity" />

@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import sathish.ngosampleapp.activity.AudioActivity;
 import sathish.ngosampleapp.activity.LoginSignUpActivity;
-import sathish.ngosampleapp.activity.testing.AudioActivity;
 import sathish.ngosampleapp.activity.testing.BookAcitivty;
 import sathish.ngosampleapp.activity.testing.LoginActivity;
 import sathish.ngosampleapp.activity.testing.SignUpActivity;

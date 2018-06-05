@@ -73,7 +73,7 @@ public class VideoActivity extends AppCompatActivity {
     }
 
     /**
-     * Performs Audio GET operation
+     * Performs Video GET operation
      */
     public class VideoTask extends AsyncTask<Void, Void, String> {
 

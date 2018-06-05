@@ -3,7 +3,9 @@ package sathish.ngosampleapp.dto;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class AudioModel {
+import java.io.Serializable;
+
+public class AudioModel implements Serializable {
 
     @SerializedName("audio_id")
     @Expose
@@ -20,18 +22,9 @@ public class AudioModel {
     @SerializedName("speaker")
     @Expose
     private String speaker;
-    @SerializedName("price")
-    @Expose
-    private String price;
-    @SerializedName("discount")
-    @Expose
-    private String discount;
     @SerializedName("is_premium")
     @Expose
     private String isPremium;
-    @SerializedName("is_free")
-    @Expose
-    private String isFree;
     @SerializedName("banner")
     @Expose
     private String banner;
@@ -79,36 +72,12 @@ public class AudioModel {
         this.speaker = speaker;
     }
 
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(String discount) {
-        this.discount = discount;
-    }
-
     public String getIsPremium() {
         return isPremium;
     }
 
     public void setIsPremium(String isPremium) {
         this.isPremium = isPremium;
-    }
-
-    public String getIsFree() {
-        return isFree;
-    }
-
-    public void setIsFree(String isFree) {
-        this.isFree = isFree;
     }
 
     public String getBanner() {
@@ -127,4 +96,17 @@ public class AudioModel {
         this.file = file;
     }
 
+    @Override
+    public String toString() {
+        return "AudioModel{" +
+                "audioId='" + audioId + '\'' +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", genre='" + genre + '\'' +
+                ", speaker='" + speaker + '\'' +
+                ", isPremium='" + isPremium + '\'' +
+                ", banner='" + banner + '\'' +
+                ", file='" + file + '\'' +
+                '}';
+    }
 }
